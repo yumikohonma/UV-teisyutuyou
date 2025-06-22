@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Union Voice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Union Voice</h1>
+
+    <div id="chat-box"></div>
+
+    <div class="input-area">
+      <textarea id="user-input" rows="3" placeholder="ここに回答を入力してください..."></textarea>
+      <button id="send-button">送信</button>
+    </div>
+
+    <div id="save-area" style="display:none;">
+      <h3>AIの分析結果</h3>
+      <textarea id="ai-summary" rows="4"></textarea>
+
+    <label for="category">カテゴリ</label>
+<select id="category">
+  <option value="">選択してください</option>
+  <option value="人間関係">人間関係</option>
+  <option value="評価">評価</option>
+  <option value="業務量">業務量</option>
+  <option value="労働環境">労働環境</option>
+  <option value="ハラスメント">ハラスメント</option>
+  <option value="キャリア">キャリア</option>
+  <option value="その他">その他</option>
+</select>
+
+      <button id="save-button">保存</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
